@@ -11,6 +11,7 @@ A memory cache with expired time, base on LruCache.
 MemCache<String, String> cache = new MemCache<>(20);
 cache.get(key);
 cache.put(key, value);
+cache.put(key, value, DateUtil.TIME_UNIT_MINUTE * 3);
 cache.remove(key);
 ```
 
